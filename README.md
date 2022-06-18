@@ -8,11 +8,17 @@
 ## Proyecto: Alquiler de barcos en Tenerife
 
 ### Índice
-- [Introducción]()
-- [Requisitos del proyecto]()
+- [Introducción](#intro)
+- [Requisitos del proyecto](#requisitos)
 - [Modelo conceptual (E/R)]()
 - [Modelo Lógico-Relacional]()
 - [Modelo Lógico Objeto-Relacional]()
 - [Generación de código]()
 - [Carga de Datos]()
 - [Distribución de tareas]()
+
+#### Introducción <a name="intro"/>
+
+
+### Requisitos del proyecto <a name="requisitos"/>
+- [Enlace al documento PDF](./Requisitos/Requisitos_AlquilerBarcos.pdf)
