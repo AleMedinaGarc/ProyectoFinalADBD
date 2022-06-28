@@ -55,7 +55,6 @@ END IF;
 
     
     -- Switch case de la eslora obvtenida segun el titulo
-	raise notice 'Value: %', Eslora_R;
 	CASE Eslora_R::INTEGER
 		WHEN 6::INTEGER THEN 
 			IF (Titulo_R::VARCHAR != 'LN' AND  Titulo_R::VARCHAR != 'PNB' AND Titulo_R::VARCHAR != 'PER' AND Titulo_R::VARCHAR != 'PY' AND Titulo_R::VARCHAR != 'CY') THEN 
@@ -94,8 +93,10 @@ BEGIN
     FROM VERIFICADOS 
     WHERE DNI_CLIENTE = NEW.DNI_cliente;
     
-	IF User_R = null  
-    THEN RETURN NULL;
+	IF User_R IS NULL
+    THEN 
+	raise notice 'Los datos de ese cliente no estan verificados';
+	RETURN NULL;
   END IF;
  RETURN NEW;
 END;
@@ -113,8 +114,10 @@ BEGIN
     FROM RESERVAS 
     WHERE Fecha = NEW.Fecha AND Turno = NEW.Turno;
     
-	IF Boat_R != NULL
-  THEN RETURN NULL;
+	IF Boat_R IS NOT NULL
+	THEN 
+	raise notice 'Ese barco ya tiene una reserva para ese fecha y turno';	
+	RETURN NULL;
   END IF;
 
   RETURN NEW;
