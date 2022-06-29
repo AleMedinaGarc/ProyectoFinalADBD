@@ -15,12 +15,12 @@
 - [Modelo Lógico Objeto-Relacional](#modeloObjetoRelacional)
 - [Generación de código]()
 - [Carga de Datos]()
-- [Distribución de tareas]()
+- [Distribución de tareas](#tareas)
 
 ---
 
 ### Introducción <a name="intro"/>
-
+En este repositorio se encuentra el desarrollo de la práctica final de la asignatura *Administración y diseño de bases de datos*. Se incluye tanto documentación y gráficos como scripts de implementación y testeo. La descripción detallada del proyecto se encuentra en el apartado siguiente.
 
 ### Requisitos del proyecto <a name="requisitos"/>
 - [Enlace al documento PDF](./Requisitos/Requisitos_AlquilerBarcos.pdf)
@@ -31,3 +31,6 @@
 ### Modelo Lógico-Relacional <a name="modeloLogico"/>
 
 ### Modelo Lógico Objeto-Relacional <a name="modeloObjetoRelacional"/>
+
+### Distribución de tareas <a name="tareas"/>
+Al tratarse de un grupo de únicamente dos personas la organización ha sido bastante cómoda y sencilla. El trabajo se ha desarrollado en conjunto, realizando reuniones de manera remota mediante Discord, de tal manera que hemos podido avanzar conjuntamente. Por tanto, las tareas se han repartido de manera equitativa ya que ambos trabajabamos sobre un tópico de manera simultanea.
