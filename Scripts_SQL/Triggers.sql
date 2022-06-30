@@ -7,9 +7,11 @@
 -- PARTE 1: CREACION DE LAS FUNCIONES
 -------------------------------------
 -- TRIGGER FUNCTION 1
+\echo '#1# Comprobar si existe TRIGGER mantenimiento'
 DROP TRIGGER IF EXISTS check_mantenimiento_before_insert_reserva ON RESERVAS;
 DROP FUNCTION IF EXISTS check_mantenimiento();
 
+\echo '#1# Crea la funcion que comprueba si el barco esta en mantenimiento'
 CREATE OR REPLACE FUNCTION check_mantenimiento() RETURNS TRIGGER AS $example$
 BEGIN
   IF NEW.Fecha = ANY 
@@ -25,9 +27,11 @@ END;
 $example$ LANGUAGE plpgsql;
 
 -- TRIGGER FUNCTION 2
+\echo '#2# Comprobar si existe TRIGGER comprobar titulo'
 DROP TRIGGER IF EXISTS check_title_before_insert_reserva ON RESERVAS;
 DROP FUNCTION IF EXISTS check_title();
 
+\echo '#2# Crea la funcion para comprobar el titulo'
 CREATE OR REPLACE FUNCTION check_title() RETURNS TRIGGER AS $example2$
 DECLARE 
   Eslora_R INTEGER;
@@ -82,9 +86,11 @@ END;
 $example2$ LANGUAGE plpgsql;
 
 -- TRIGGER FUNCTION 3
+\echo '#3# Comprobar si existe TRIGGER comprobar verificado'
 DROP TRIGGER IF EXISTS check_verificado_before_insert_reserva ON RESERVAS;
 DROP FUNCTION IF EXISTS check_verificado();
 
+\echo '#3# Crear funcion que comprueba si usuario esta verificado'
 CREATE OR REPLACE FUNCTION check_verificado() RETURNS TRIGGER AS $example3$
 DECLARE 
   User_R varchar;
@@ -103,9 +109,11 @@ END;
 $example3$ LANGUAGE plpgsql;
 
 -- TRIGGER FUNCTION 4
+\echo '#4# Comprobar si existe TRIGGER barco ocupado'
 DROP TRIGGER IF EXISTS check_barco_ocupado_before_insert_reserva ON RESERVAS;
 DROP FUNCTION IF EXISTS check_barco_ocupado();
 
+\echo '#4# Crea funcion que comprueba si el barco esta ocupado'
 CREATE OR REPLACE FUNCTION check_barco_ocupado() RETURNS TRIGGER AS $example4$
 DECLARE 
   Boat_R varchar;
@@ -127,6 +135,7 @@ $example4$ LANGUAGE plpgsql;
 ---------------------
 -- PARTE 2: CREACION DE LOS TRIGGERS
 ---------------------
+\echo '#5# Creacion de los triggers'
 CREATE TRIGGER check_mantenimiento_before_insert_reserva BEFORE INSERT ON RESERVAS
 FOR EACH ROW EXECUTE PROCEDURE check_mantenimiento();
 

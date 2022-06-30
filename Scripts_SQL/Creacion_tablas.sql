@@ -3,6 +3,7 @@
 -- Eduardo Da Silva Yanes
 
 -- Eliminar tablas
+\echo '## ELIMINA LAS TABLAS EN CASO DE EXISTIR'
 DROP TABLE IF EXISTS BARCOS CASCADE;
 DROP TABLE IF EXISTS EMPRESA CASCADE;
 DROP TABLE IF EXISTS PATRON_CONTRATADO CASCADE;
@@ -19,6 +20,7 @@ CREATE TYPE valid_turnos AS ENUM('tarde', 'mañana', 'todo');
 -- -----------------------------------------------------
 -- Table BARCOS
 -- -----------------------------------------------------
+\echo '## TABLA BARCOS'
 CREATE TABLE IF NOT EXISTS BARCOS (
   MatriculaBarco INT NOT NULL,
   Nombre VARCHAR(45) NOT NULL,
@@ -32,6 +34,7 @@ CREATE TABLE IF NOT EXISTS BARCOS (
 -- -----------------------------------------------------
 -- Table EMPRESA
 -- -----------------------------------------------------
+\echo '## TABLA EMPRESA'
 CREATE TABLE IF NOT EXISTS EMPRESA (
   NIFEmpresa VARCHAR(45) NOT NULL,
   nombreEmpresa VARCHAR(45) NOT NULL,
@@ -42,6 +45,7 @@ CREATE TABLE IF NOT EXISTS EMPRESA (
 -- -----------------------------------------------------
 -- Table PATRON_CONTRATADO
 -- -----------------------------------------------------
+\echo '## TABLA PATRON CONTRATADO'
 CREATE TABLE IF NOT EXISTS PATRON_CONTRATADO (
   DNI_patron VARCHAR(9) NOT NULL,
   Nombre VARCHAR(45) NOT NULL,
@@ -55,6 +59,7 @@ CREATE TABLE IF NOT EXISTS PATRON_CONTRATADO (
 -- -----------------------------------------------------
 -- Table HORARIO
 -- -----------------------------------------------------
+\echo '## TABLA HORARIO'
 CREATE TABLE IF NOT EXISTS HORARIO (
   idHorario SERIAL,
   DNI_patron VARCHAR(9) NOT NULL,
@@ -71,6 +76,7 @@ CREATE TABLE IF NOT EXISTS HORARIO (
 -- -----------------------------------------------------
 -- Table MANTENIMIENTO
 -- -----------------------------------------------------
+\echo '## TABLA MANTENIMIENTO'
 CREATE TABLE IF NOT EXISTS MANTENIMIENTO (
   idMantenimiento SERIAL,
   idBarco INT NOT NULL,
@@ -93,6 +99,7 @@ CREATE TABLE IF NOT EXISTS MANTENIMIENTO (
 -- -----------------------------------------------------
 -- Table USUARIOS_CLIENTES
 -- -----------------------------------------------------
+\echo '## TABLA USUARIOS CLIENTES'
 CREATE TABLE IF NOT EXISTS USUARIOS_CLIENTES (
   DNI_cliente VARCHAR(9) NOT NULL UNIQUE,
   Correo VARCHAR(45) NOT NULL,
@@ -107,6 +114,7 @@ CREATE TABLE IF NOT EXISTS USUARIOS_CLIENTES (
 -- -----------------------------------------------------
 -- Table USUARIOS_ADMIN
 -- -----------------------------------------------------
+\echo '## TABLAS USUARIOS ADMIN'
 CREATE TABLE IF NOT EXISTS USUARIOS_ADMIN (
   DNI_admin VARCHAR(9) NOT NULL UNIQUE,
   Correo VARCHAR(45) NOT NULL,
@@ -119,6 +127,7 @@ CREATE TABLE IF NOT EXISTS USUARIOS_ADMIN (
 -- -----------------------------------------------------
 -- Table VERIFICADOS
 -- -----------------------------------------------------
+\echo '## TABLAS USUARIOS VERIFICADOS'
 CREATE TABLE IF NOT EXISTS VERIFICADOS (
   DNI_cliente VARCHAR(9) NOT NULL,
   DNI_admin VARCHAR(9) NOT NULL,
@@ -139,6 +148,7 @@ CREATE TABLE IF NOT EXISTS VERIFICADOS (
 -- -----------------------------------------------------
 -- Table RESERVAS
 -- -----------------------------------------------------
+\echo '## TABLA RESERVAS'
 CREATE TABLE IF NOT EXISTS RESERVAS (
   idReserva SERIAL,
   idBarco INT NOT NULL,
@@ -176,6 +186,7 @@ CREATE TABLE IF NOT EXISTS RESERVAS (
 -- -----------------------------------------------------
 -- Table PAGO
 -- -----------------------------------------------------
+\echo '## TABLA PAGO'
 CREATE TABLE IF NOT EXISTS PAGO (
   idPago SERIAL,
   idReserva INT NOT NULL,
