@@ -26,11 +26,12 @@ En este repositorio se encuentra el desarrollo de la práctica final de la asign
 - [Enlace al documento PDF](./Requisitos/Requisitos_AlquilerBarcos.pdf)
 
 ### Modelo conceptual (E/R) <a name="modeloER"/>
-- [Enlace al fichero del modelo](./Modelo_ER/ModeloER.png)
+- [Enlace al fichero del modelo](./Modelo_ER/ModeloE_R.jpg)
 
 ### Modelo Lógico-Relacional <a name="modeloLogico"/>
 
 ### Modelo Lógico Objeto-Relacional <a name="modeloObjetoRelacional"/>
+- [Enlace al fichero PDF](https://github.com/AleMedinaGarc/ProyectoFinalADBD/blob/main/LogicoObjRelacional/Modelo%20L%C3%B3gico%20Objeto-Relacional.pdf)
 
 ### Distribución de tareas <a name="tareas"/>
 Al tratarse de un grupo de únicamente dos personas la organización ha sido bastante cómoda y sencilla. El trabajo se ha desarrollado en conjunto, realizando reuniones de manera remota mediante Discord, de tal manera que hemos podido avanzar conjuntamente. Por tanto, las tareas se han repartido de manera equitativa ya que ambos trabajabamos sobre un tópico de manera simultanea.
