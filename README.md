@@ -17,6 +17,7 @@
 - [Modelo Lógico Objeto-Relacional](#modeloObjetoRelacional)
 - [Generación de código](#generacionDeCodigo)
 - [Carga de Datos](#cargaDeDatos)
+- [Video explicativo (inglés)](#video)
 - [Distribución de tareas](#tareas)
 
 ---
@@ -59,6 +60,10 @@ En este repositorio se encuentra el desarrollo de la práctica final de la asign
 - [Enlace a la carpeta](./Scripts_SQL)
 - [Enlace al fichero PDF](./Scripts_SQL/Documentacion/ScriptInsercion.pdf)
 - [Enlace al código fuente](./Scripts_SQL/Codigo/Carga_datos.sql)
+
+### Video explicativo (inglés) <a name="video"/>
+
+- [Enlace al video](https://www.youtube.com/watch?v=A3aLc-v_wM0)
 
 ### Distribución de tareas <a name="tareas"/>
 
