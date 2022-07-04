@@ -50,15 +50,15 @@ En este repositorio se encuentra el desarrollo de la práctica final de la asign
 ### Generacion de Código <a name="generacionDeCodigo"/>
 
 - [Enlace a la carpeta](./Scripts_SQL)
-- [Enlace al fichero PDF](.Scripts_SQL/Documentacion/ScriptCreacion.pdf)
-- [Enlace al código fuente creacion](.Scripts_SQL/Codigo/Creacion_tablas.sql)
-- [Enlace al código fuente triggers](.Scripts_SQL/Codigo/Triggers.sql)
+- [Enlace al fichero PDF](./Scripts_SQL/Documentacion/ScriptCreacion.pdf)
+- [Enlace al código fuente creacion](./Scripts_SQL/Codigo/Creacion_tablas.sql)
+- [Enlace al código fuente triggers](./Scripts_SQL/Codigo/Triggers.sql)
 
 ### Carga de Datos <a name="cargaDeDatos"/>
 
 - [Enlace a la carpeta](./Scripts_SQL)
-- [Enlace al fichero PDF](.Scripts_SQL/Documentacion/ScriptInsercion.pdf)
-- [Enlace al código fuente](.Scripts_SQL/Codigo/Carga_datos.sql)
+- [Enlace al fichero PDF](./Scripts_SQL/Documentacion/ScriptInsercion.pdf)
+- [Enlace al código fuente](./Scripts_SQL/Codigo/Carga_datos.sql)
 
 ### Distribución de tareas <a name="tareas"/>
 
